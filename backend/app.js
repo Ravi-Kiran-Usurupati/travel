@@ -6,6 +6,9 @@ const app= express()
 
 const cors = require('cors')
 
+const connectdb = require('./database/db')
+connectdb();
+
 app.use(cors())
 
 
