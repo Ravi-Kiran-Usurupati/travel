@@ -22,6 +22,7 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true,
         unique: true,
+        lowercase: true,
         
         minlength:[4,'Enter your email address'],
     },
